@@ -248,6 +248,60 @@ box-shadow: 0 20px 20px -10px  rgb(66, 165, 245, 0.5);
 
     
 
+
+        <style>
+    /* Example of CSS styles for social-icons */
+    .social-icons {
+        position: fixed;
+        top: 50%;
+        right: 10px; /* Adjusted for better spacing */
+        transform: translateY(-50%);
+        width: 50px; /* Reduced width */
+        z-index: 1000;
+    }
+
+    .social-icons a {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center; /* Center the icons */
+    }
+
+    .social-icons img {
+        width: 100%;
+        height: auto;
+    }
+
+       /* Ensuring that all icons are vertically aligned */
+       .social-icons img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    /* Adjust icon size for smaller screens */
+    @media (max-width: 600px) {
+        .social-icons {
+            width: 40px; /* Adjusted size for smaller screens */
+        }
+    }
+
+    /* Add padding to the content area to avoid overlap */
+    .container-fluid {
+        padding-right: 60px; /* Increase if necessary */
+    }
+</style>
+
+
+
+   
+<div class="social-icons">
+    <a href="https://www.facebook.com/EASTCplanwithfigures/?mibextid=ZbWKwL" target="_blank"><img src='face.png' style='width: 130%;'></a>
+    <a href="https://twitter.com/planwithfigures" target="_blank" class="ml-2"><img src='twitter.png' style='width: 115%;'></a>
+    <a href="https://instagram.com/chuo_cha_takwimu?igshid=NGExMmI2YTkyZg==" target="_blank"><img src='instagram.jpeg' style='width: 130%;'></a>
+    <a href="https://www.youtube.com/@TheEasternAfricaStatisticalTra" target="_blank"><img src='you.png' style='width: 130%;'></a>
+</div>
+    
+
+    
     <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
