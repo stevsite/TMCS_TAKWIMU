@@ -203,6 +203,50 @@ box-shadow: 0 20px 20px -10px  rgb(66, 165, 245, 0.5);
 <!---Call center end-->
 
 
+<style>
+.ball {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 50px, 0);
+    }
+}
+
+.right-image {
+    position: fixed; /* Make sure it does not move */
+    bottom: 60px; /* Adjust bottom spacing */
+    right: 20px; /* Place it fully on the right */
+    z-index: 1001; /* Ensure it's above everything */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-image img {
+    width: 110px; /* Adjust image size */
+    height: auto;
+    border-radius: 15px;
+}
+
+</style>
+
+
+
+<div class="ball right-image">
+   <img src="images/cos/30_years.jpg" alt="User Avatar" class="img-fluid">
+</div>
+
+    
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
